@@ -469,6 +469,7 @@ namespace Hims_Security_API.Repository
                 var tblOrg = _context.TblOrganizations.Where(x => x.OrganizationId == obj.OrganizationId).FirstOrDefault();
                 tblOrg.OrganizationName = obj.Organization;
                 tblOrg.Address = obj.Address;
+                tblOrg.Organizationimage = obj.organizationimage;
                 return await _context.SaveChangesAsync();
             }
           

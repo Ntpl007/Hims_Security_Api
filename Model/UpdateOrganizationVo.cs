@@ -10,5 +10,6 @@ namespace Hims_Security_API.Model
         public int OrganizationId { get; set; }
         public string Organization { get; set; }
         public string Address { get; set; }
+        public string organizationimage { get; set; }
     }
 }
